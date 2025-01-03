@@ -6,92 +6,243 @@
     <title>ADX | Online Shopping, Clothes | ADXONLINE SHOP</title>
     <link rel="icon" href="adxlogolast.png" type="image/png">
     <style>
-    /* General Reset */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Header Styling */
-header {
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Top Bar */
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-bottom: 1px solid #ddd;
-}
-
-.top-bar nav a,
-.user-options a {
-    text-decoration: none;
-    color: #000;
-    margin-right: 15px;
-}
-
-.user-options a:last-child {
-    margin-right: 0;
-}
-
-/* Main Header */
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;
-}
-
-.logo {
-    height: 50px;
-}
-
-.main-nav a {
-    text-decoration: none;
-    color: #000;
-    margin: 0 15px;
-    font-size: 16px;
-}
-
-.search-bar input {
-    padding: 5px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-}
-
-/* Bottom Bar */
-.bottom-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    font-size: 14px;
+   /* Dropdown Menu - Hidden by Default */
+.dropdown-menu {
+    display: none; /* Ensure the dropdown is hidden initially */
+    position: absolute;
+    top: 100%; /* Position below the header */
+    left: 0;
     background-color: #fff;
-    color: #555;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 400px; /* Set width for dropdown */
+    display: flex;
+    gap: 20px; /* Add spacing between columns */
 }
+
+/* Show Dropdown Menu on Hover */
+.dropdown:hover .dropdown-menu {
+    display: flex; /* Show the dropdown when hovering */
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    margin: 8px 0; /* Add spacing between options */
+    font-size: 14px; /* Adjust font size */
+}
+
+.dropdown-menu ul li strong {
+    font-size: 16px; /* Make section titles larger */
+    color: #333; /* Darker text for section titles */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+/* Adjust Header Links */
+nav ul li {
+    position: relative;
+    margin-right: 30px; /* Add spacing between main menu items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f5f5f5; /* Light hover effect for links */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+    /* Basic Navigation Menu */
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        position: relative;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+    }
+
+    /* Dropdown Menu */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        width: 300px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .dropdown-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-menu ul li {
+        margin: 5px 0;
+    }
+
+    .dropdown-menu ul li strong {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    /* Show Dropdown on Hover */
+    .dropdown:hover .dropdown-menu {
+        display: flex;
+    }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+
+        .logo img {
+    height: 50px; /* Increase height */
+    width: auto;   /* Keep proportional width */
+        }
+
+        /* Banner Section */
+        .banner {
+            background-color: #d00; /* Red background */
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .banner h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .banner .categories {
+            margin-top: 20px;
+        }
+
+        .categories button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #fff;
+            color: #d00;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .categories button:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Footer (Optional) */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
 
     <!-- Header -->
-   <header>
-    <div class="logo">
-        <img src="adxlogo.png" alt="ADX Logo">
+    <header>
+        <div class="logo">
+            <img src="adxlogo.png" alt="ADX Logo">
+        </div>
+        <nav>
+    <ul class="menu">
+        <li>
+            <a href="#">Sale</a>
+        </li>
+        <li class="dropdown">
+    <a href="#">Ladies</a>
+    <div class="dropdown-menu">
+        <ul>
+            <li><strong>Offers</strong></li>
+            <li>Min 50% Off Trousers</li>
+            <li>Ladies gym wear starting 499</li>
+        </ul>
+        <ul>
+            <li><strong>Clothing</strong></li>
+            <li>View All</li>
+            <li>Tops</li>
+            <li>Sweatshirts & Hoodies</li>
+        </ul>
+        <ul>
+            <li><strong>Sport</strong></li>
+            <li>View All</li>
+            <li>New In</li>
+            <li>Leggings & Tights</li>
+        </ul>
     </div>
-    <nav>
-        <a href="#">Sale</a>
-        <a href="#">Ladies</a>
-        <a href="#">Men</a>
-        <a href="#">Baby</a>
-        <a href="#">Kids</a>
-        <a href="#">Home</a>
-    </nav>
-</header>
+</li>
+        <li>
+            <a href="#">Men</a>
+        </li>
+        <li>
+            <a href="#">Baby</a>
+        </li>
+        <li>
+            <a href="#">Kids</a>
+        </li>
+        <li>
+            <a href="#">Home</a>
+        </li>
+    </ul>
+</nav>
+    </header>
 
     <!-- Banner Section -->
     <div class="banner">
