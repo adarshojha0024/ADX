@@ -6,9 +6,9 @@
     <title>ADX | Online Shopping, Clothes | ADXONLINE SHOP</title>
     <link rel="icon" href="adxlogolast.png" type="image/png">
     <style>
-  /* Dropdown Menu - Hidden by Default */
+ /* Dropdown Menu */
 .dropdown-menu {
-    display: none !important; /* Force hiding the menu by default */
+    display: none; /* Hidden by default */
     position: absolute;
     top: 100%;
     left: 0;
@@ -17,32 +17,32 @@
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    width: 400px;
-    gap: 20px;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: flex !important; /* Show on hover */
+    width: 600px; /* Adjust width to fit content */
+    display: flex; /* Flexbox for aligning columns */
+    justify-content: space-between; /* Add space between columns */
+    gap: 20px; /* Add spacing between columns */
 }
 
 .dropdown-menu ul {
-    list-style: none;
+    list-style: none; /* Remove bullets */
     padding: 0;
     margin: 0;
+    flex: 1; /* Equal width for each column */
 }
 
 .dropdown-menu ul li {
-    margin: 8px 0; /* Add spacing between options */
+    margin: 8px 0; /* Space between items */
     font-size: 14px; /* Adjust font size */
 }
 
 .dropdown-menu ul li strong {
-    font-size: 16px; /* Make section titles larger */
-    color: #333; /* Darker text for section titles */
+    font-size: 16px; /* Section titles larger */
+    color: #333; /* Darker for titles */
 }
 
+/* Show Dropdown Menu on Hover */
 .dropdown:hover .dropdown-menu {
-    display: flex;
+    display: flex; /* Display dropdown on hover */
 }
 
 /* Adjust Header Links */
@@ -204,7 +204,7 @@ nav ul li a:hover {
         <li>
             <a href="#">Sale</a>
         </li>
-      <li class="dropdown">
+     <li class="dropdown">
     <a href="#">Ladies</a>
     <div class="dropdown-menu">
         <ul>
@@ -217,6 +217,12 @@ nav ul li a:hover {
             <li>View All</li>
             <li>Tops</li>
             <li>Sweatshirts & Hoodies</li>
+        </ul>
+        <ul>
+            <li><strong>Sport</strong></li>
+            <li>View All</li>
+            <li>New In</li>
+            <li>Leggings & Tights</li>
         </ul>
     </div>
 </li>
