@@ -6,9 +6,9 @@
     <title>ADX | Online Shopping, Clothes | ADXONLINE SHOP</title>
     <link rel="icon" href="adxlogolast.png" type="image/png">
     <style>
-    /* Dropdown Menu */
+   /* Dropdown Menu - Hidden by Default */
 .dropdown-menu {
-    display: none;
+    display: none; /* Ensure the dropdown is hidden initially */
     position: absolute;
     top: 100%; /* Position below the header */
     left: 0;
@@ -17,9 +17,14 @@
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    width: 400px; /* Increase the width for better alignment */
+    width: 400px; /* Set width for dropdown */
     display: flex;
     gap: 20px; /* Add spacing between columns */
+}
+
+/* Show Dropdown Menu on Hover */
+.dropdown:hover .dropdown-menu {
+    display: flex; /* Show the dropdown when hovering */
 }
 
 .dropdown-menu ul {
