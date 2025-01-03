@@ -6,6 +6,60 @@
     <title>ADX | Online Shopping, Clothes | ADXONLINE SHOP</title>
     <link rel="icon" href="adxlogolast.png" type="image/png">
     <style>
+    /* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the header */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 400px; /* Increase the width for better alignment */
+    display: flex;
+    gap: 20px; /* Add spacing between columns */
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    margin: 8px 0; /* Add spacing between options */
+    font-size: 14px; /* Adjust font size */
+}
+
+.dropdown-menu ul li strong {
+    font-size: 16px; /* Make section titles larger */
+    color: #333; /* Darker text for section titles */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+/* Adjust Header Links */
+nav ul li {
+    position: relative;
+    margin-right: 30px; /* Add spacing between main menu items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f5f5f5; /* Light hover effect for links */
+    border-radius: 5px; /* Rounded corners on hover */
+}
     /* Basic Navigation Menu */
     nav ul {
         list-style: none;
