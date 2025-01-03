@@ -6,25 +6,23 @@
     <title>ADX | Online Shopping, Clothes | ADXONLINE SHOP</title>
     <link rel="icon" href="adxlogolast.png" type="image/png">
     <style>
-   /* Dropdown Menu - Hidden by Default */
+  /* Dropdown Menu - Hidden by Default */
 .dropdown-menu {
-    display: none; /* Ensure the dropdown is hidden initially */
+    display: none !important; /* Force hiding the menu by default */
     position: absolute;
-    top: 100%; /* Position below the header */
+    top: 100%;
     left: 0;
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    width: 400px; /* Set width for dropdown */
-    display: flex;
-    gap: 20px; /* Add spacing between columns */
+    width: 400px;
+    gap: 20px;
 }
 
-/* Show Dropdown Menu on Hover */
 .dropdown:hover .dropdown-menu {
-    display: flex; /* Show the dropdown when hovering */
+    display: flex !important; /* Show on hover */
 }
 
 .dropdown-menu ul {
@@ -206,7 +204,7 @@ nav ul li a:hover {
         <li>
             <a href="#">Sale</a>
         </li>
-        <li class="dropdown">
+      <li class="dropdown">
     <a href="#">Ladies</a>
     <div class="dropdown-menu">
         <ul>
@@ -219,12 +217,6 @@ nav ul li a:hover {
             <li>View All</li>
             <li>Tops</li>
             <li>Sweatshirts & Hoodies</li>
-        </ul>
-        <ul>
-            <li><strong>Sport</strong></li>
-            <li>View All</li>
-            <li>New In</li>
-            <li>Leggings & Tights</li>
         </ul>
     </div>
 </li>
