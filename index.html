@@ -6,6 +6,61 @@
     <title>ADX | Online Shopping, Clothes | ADXONLINE SHOP</title>
     <link rel="icon" href="adxlogolast.png" type="image/png">
     <style>
+        <style>
+    /* Basic Navigation Menu */
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    nav ul li {
+        position: relative;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+    }
+
+    /* Dropdown Menu */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        width: 300px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .dropdown-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown-menu ul li {
+        margin: 5px 0;
+    }
+
+    .dropdown-menu ul li strong {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    /* Show Dropdown on Hover */
+    .dropdown:hover .dropdown-menu {
+        display: flex;
+    }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
