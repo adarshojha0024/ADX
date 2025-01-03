@@ -3,186 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADX | Online Shopping, Clothes | ADXONLINE SHOP</title>
+    <title>ADX | Home</title>
     <link rel="icon" href="adxlogolast.png" type="image/png">
     <style>
- /* Dropdown Menu */
-.dropdown-menu {
-    display: none !important; /* Hidden by default */
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    width: 400px; /* Adjust width to fit content */
-    gap: 20px; /* Add spacing between columns */
-}
-
-.dropdown-menu ul {
-    list-style: none; /* Remove bullets */
-    padding: 0;
-    margin: 0;
-    flex: 1; /* Equal width for each column */
-}
-
-.dropdown-menu ul li {
-    margin: 8px 0; /* Space between items */
-    font-size: 14px; /* Adjust font size */
-}
-
-.dropdown-menu ul li strong {
-    font-size: 16px; /* Section titles larger */
-    color: #333; /* Darker for titles */
-}
-
-/* Show Dropdown Menu on Hover */
-.dropdown:hover .dropdown-menu {
-    display: flex !important;/* Display dropdown on hover */
-}
-
-/* Adjust Header Links */
-nav ul li {
-    position: relative;
-    margin-right: 30px; /* Add spacing between main menu items */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #f5f5f5; /* Light hover effect for links */
-    border-radius: 5px; /* Rounded corners on hover */
-}
-    /* Basic Navigation Menu */
-    nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-    }
-
-    nav ul li {
-        position: relative;
-        margin-right: 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: #000;
-        font-size: 16px;
-    }
-
-    /* Dropdown Menu */
-    .dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        padding: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-        width: 300px;
-        display: flex;
-        gap: 10px;
-    }
-
-    .dropdown-menu ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .dropdown-menu ul li {
-        margin: 5px 0;
-    }
-
-    .dropdown-menu ul li strong {
-        font-size: 14px;
-        text-transform: uppercase;
-    }
-
-    /* Show Dropdown on Hover */
-    .dropdown:hover .dropdown-menu {
-        display: flex;
-    }
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
         }
 
         /* Header */
-header {
-    display: flex;
-    justify-content: center; /* Center the logo */
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Remove justify-content: space-between; */
-
-        header nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #000;
-            font-size: 14px;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .logo img {
-    height: 50px; /* Increase height */
-    width: auto;   /* Keep proportional width */
+            height: 50px;
         }
 
-       /* Banner Section */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Banner */
         .banner {
-            background-color: #000; /* Black background */
+            background-image: url('hero-image.jpg'); /* Replace with your banner image */
+            background-size: cover;
+            background-position: center;
+            position: relative;
             color: #fff;
             text-align: center;
-            padding: 40px 20px;
+            padding: 100px 20px;
+        }
+
+        .banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Adds a dark overlay */
         }
 
         .banner h1 {
-            font-size: 40px;
-            margin: 0;
+            font-size: 48px;
+            z-index: 1;
+            position: relative;
         }
 
         .banner p {
             font-size: 18px;
-            margin: 10px 0;
+            margin: 15px 0 30px;
+            z-index: 1;
+            position: relative;
         }
 
-        .banner .categories {
-            margin-top: 20px;
-        }
-
-        .categories button {
-            margin: 5px;
+        .banner button {
             padding: 10px 20px;
             border: none;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            z-index: 1;
+            position: relative;
+        }
+
+        .banner button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Product Section */
+        .product-section {
+            padding: 40px 20px;
+        }
+
+        .product-section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 10px;
+        }
+
+        .product-card {
             background-color: #fff;
-            color: #000;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .product-card .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 16px;
+            color: #007bff;
+            margin: 5px 0;
+        }
+
+        .product-card button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
             font-size: 14px;
             cursor: pointer;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
-        .categories button:hover {
-            background-color: #f5f5f5;
+        .product-card button:hover {
+            background-color: #0056b3;
         }
 
-        /* Footer (Optional) */
+        /* Footer */
         footer {
             text-align: center;
             padding: 20px;
@@ -200,60 +196,7 @@ header {
             <img src="adxlogo.png" alt="ADX Logo">
         </div>
         <nav>
-    <ul class="menu">
-        <li>
-            <a href="#">Sale</a>
-        </li>
-     <li class="dropdown">
-    <a href="#">Ladies</a>
-    <div class="dropdown-menu">
-        <ul>
-            <li><strong>Offers</strong></li>
-            <li>Min 50% Off Trousers</li>
-            <li>Ladies gym wear starting 499</li>
-        </ul>
-        <ul>
-            <li><strong>Clothing</strong></li>
-            <li>View All</li>
-            <li>Tops</li>
-            <li>Sweatshirts & Hoodies</li>
-        </ul>
-    </div>
-</li>
-        <li>
-            <a href="#">Men</a>
-        </li>
-        <li>
-            <a href="#">Baby</a>
-        </li>
-        <li>
-            <a href="#">Kids</a>
-        </li>
-        <li>
-            <a href="#">Home</a>
-        </li>
-    </ul>
-</nav>
-    </header>
-
-    <!-- Banner Section -->
-    <div class="banner">
-        <h1>Final Sale: Up to 70% Off</h1>
-        <p>Discover new styles added.</p>
-        <div class="categories">
-            <button>Ladies</button>
-            <button>Men</button>
-            <button>Baby</button>
-            <button>Kids</button>
-            <button>Home</button>
-            <button>Sports</button>
-        </div>
-    </div>
-
-    <!-- Footer (Optional) -->
-    <footer>
-        Free shipping above ₹1999 | Free & flexible 15 days return | Estimated delivery: 2-7 days
-    </footer>
-
-</body>
-</html>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Ladies</a></li>
+                <li><a 
