@@ -1,10 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADX Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Banner Section */
+        .banner {
+            background-color: #d00; /* Red background */
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .banner h1 {
+            font-size: 40px;
+            margin: 0;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .banner .categories {
+            margin-top: 20px;
+        }
+
+        .categories button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #fff;
+            color: #d00;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .categories button:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Footer (Optional) */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to ADX Online Shop!</h1>
-    <p>We are live!</p>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">ADX</div>
+        <nav>
+            <a href="#">Sale</a>
+            <a href="#">Ladies</a>
+            <a href="#">Men</a>
+            <a href="#">Baby</a>
+            <a href="#">Kids</a>
+            <a href="#">Home</a>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <h1>Final Sale: Up to 70% Off</h1>
+        <p>Discover new styles added.</p>
+        <div class="categories">
+            <button>Ladies</button>
+            <button>Men</button>
+            <button>Baby</button>
+            <button>Kids</button>
+            <button>Home</button>
+            <button>Sports</button>
+        </div>
+    </div>
+
+    <!-- Footer (Optional) -->
+    <footer>
+        Free shipping above ₹1999 | Free & flexible 15 days return | Estimated delivery: 2-7 days
+    </footer>
+
 </body>
 </html>
